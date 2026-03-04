@@ -1,54 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Doug Bullis</title>
-<style>
-body{
-font-family: Verdana, Arial, sans-serif;
-max-width:700px;
-margin:60px auto;
-line-height:1.6;
-color:#333;
-}
-h1{
-font-size:36px;
-margin-bottom:5px;
-}
-h2{
-font-weight:normal;
-color:#555;
-margin-top:0;
-}
-hr{
-margin:30px 0;
-}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doug Bullis</title>
+  <meta name="description" content="Doug Bullis — Washington State Managing Broker. Former NWMLS Instructor. Lean Six Sigma Yellow Belt." />
+  <style>
+    :root { --bg:#0b1220; --card:#0f1a2e; --text:#e7eefc; --muted:#a8b6d6; --line:rgba(255,255,255,.12); }
+    * { box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: Verdana, Arial, sans-serif;
+      background: radial-gradient(900px 500px at 20% 10%, rgba(86,135,255,.22), transparent 55%),
+                  radial-gradient(700px 400px at 85% 35%, rgba(74,222,128,.14), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height:1.6;
+    }
+    .wrap{ max-width: 860px; margin: 0 auto; padding: 56px 18px; }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 34px 28px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.35);
+      backdrop-filter: blur(6px);
+    }
+    h1{ margin:0; font-size: 42px; letter-spacing:.2px; }
+    .sub{ margin: 10px 0 22px; color: var(--muted); font-size: 18px; }
+    .sub span{ padding: 6px 10px; border:1px solid var(--line); border-radius: 999px; display:inline-block; }
+    p{ margin: 0 0 14px; font-size: 16px; color: rgba(231,238,252,.92); }
+    hr{ border:0; height:1px; background: var(--line); margin: 22px 0; }
+    .grid{ display:grid; grid-template-columns: 1fr; gap: 10px; }
+    .label{ color: var(--muted); font-size: 13px; text-transform: uppercase; letter-spacing: .08em; }
+    a{ color:#b9d3ff; text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+    .footer{ margin-top: 18px; color: var(--muted); font-size: 13px; }
+  </style>
 </head>
 
 <body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Doug Bullis</h1>
+      <div class="sub"><span>Managing Broker | Washington State</span></div>
 
-<h1>Doug Bullis</h1>
-<h2>Managing Broker | Washington State</h2>
+      <p>
+        Former NWMLS Instructor and Washington real estate professional with many years of experience working with brokers across the state.
+      </p>
+      <p>
+        I am currently reconnecting with colleagues and friends throughout the Washington real estate community while exploring future professional opportunities and continuing work on several industry-related projects.
+      </p>
 
-<p>
-Former NWMLS Instructor and Washington real estate professional with many years of experience working with brokers across the state.
-</p>
+      <hr />
 
-<p>
-I am currently reconnecting with colleagues and friends throughout the Washington real estate community while exploring future professional opportunities and continuing work on several industry-related projects.
-</p>
+      <div class="grid">
+        <div class="label">Email</div>
+        <div><a href="mailto:doug@dougbullis.com">doug@dougbullis.com</a></div>
+      </div>
 
-<hr>
+      <hr />
 
-<p>
-<strong>Email:</strong><br>
-<a href="mailto:doug@dougbullis.com">doug@dougbullis.com</a>
-</p>
+      <div class="grid">
+        <div>Former NWMLS Instructor</div>
+        <div>Lean Six Sigma Yellow Belt</div>
+      </div>
 
-<p>
-Former NWMLS Instructor<br>
-Lean Six Sigma Yellow Belt
-</p>
+      <div class="footer">
+        &copy; <span id="y"></span> Doug Bullis
+      </div>
+    </div>
+  </div>
 
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
