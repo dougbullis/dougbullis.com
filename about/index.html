@@ -4,10 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Doug Bullis</title>
-  
- <div style="text-align: center;">
-  <img src="headshot.png" class="headshot" alt="Doug Bullis headshot" />
-</div>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -55,29 +51,32 @@
     h1{
       font-size:42px;
       font-weight:600;
+      letter-spacing:.5px;
       margin-bottom:20px;
     }
 
     h2{
       font-size:24px;
+      font-weight:500;
       margin-top:30px;
-      margin-bottom:12px;
+      margin-bottom:14px;
+      color:var(--text);
     }
 
     p{
       font-size:18px;
       line-height:1.7;
-      margin-bottom:18px;
+      margin-bottom:20px;
       color:#d1d5db;
     }
 
     ul{
-      margin-top:10px;
+      list-style:none;
       margin-bottom:20px;
     }
 
     li{
-      margin-bottom:10px;
+      margin-bottom:12px;
       font-size:17px;
       color:#cbd5f5;
     }
@@ -85,6 +84,26 @@
     a{
       color:var(--accent);
       text-decoration:none;
+    }
+
+    a:hover{
+      text-decoration:underline;
+    }
+
+    .headshot{
+      width:100%;
+      max-width:300px;
+      border-radius:18px;
+      margin:0 auto 30px auto;
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+      display:block;
+    }
+
+    .button-row{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:10px;
     }
 
     .linkedin-button{
@@ -111,15 +130,24 @@
       margin:30px 0;
     }
 
-    .headshot{
-  width:100%;
-  max-width:300px;
-  border-radius:18px;
-  margin:0 auto 30px auto;
-  box-shadow:0 18px 60px rgba(0,0,0,.35);
-  display:block;
-}
-    
+    .footer{
+      margin-top:24px;
+      font-size:15px;
+      color:var(--muted);
+    }
+
+    .copyright{
+      margin-top:30px;
+      font-size:14px;
+      color:#6b7280;
+    }
+
+    @media (max-width:640px){
+      h1{ font-size:32px; }
+      h2{ font-size:22px; }
+      p{ font-size:16px; }
+      .card{ padding:30px 24px; }
+    }
   </style>
 </head>
 
@@ -129,15 +157,18 @@
 
       <h1>About Doug Bullis</h1>
 
+      <img src="/headshot.png" class="headshot" alt="Doug Bullis headshot" />
+
       <p>
         I’m a Managing Broker in Washington State with a background in brokerage operations,
-        agent development, and real estate systems.
+        broker development, real estate systems, and professional education.
       </p>
 
       <p>
-        I’ve worked closely with brokers across Washington, including serving as an instructor with NWMLS.
-        That experience provided direct insight into how brokers actually operate day-to-day — what works,
-        where things break down, and where most people get stuck.
+        Over the years, I’ve worked closely with brokers across Washington, including serving
+        as an instructor with NWMLS. That experience gave me direct insight into how brokers
+        actually operate day to day — what works well, where friction shows up, and what it
+        takes to build stronger, more consistent business systems.
       </p>
 
       <h2>What I Focus On</h2>
@@ -147,32 +178,58 @@
         <li>Broker growth and business development</li>
         <li>Transaction flow and process improvement</li>
         <li>Systems that reduce friction and increase consistency</li>
+        <li>Operational clarity that supports long-term scalability</li>
       </ul>
 
       <h2>How I Think</h2>
 
       <p>
         I approach real estate through a systems and process lens. With a Lean Six Sigma background,
-        I focus on simplifying workflows, eliminating inefficiencies, and building repeatable systems
-        that support long-term growth.
+        I focus on simplifying workflows, removing inefficiencies, and building repeatable practices
+        that support better performance over time.
       </p>
 
       <p>
-        The goal isn’t complexity — it’s clarity, consistency, and better outcomes over time.
+        The goal is not complexity. It’s clarity, consistency, and better outcomes for brokers,
+        brokerages, and the people they serve.
       </p>
 
       <h2>Current Focus</h2>
 
       <p>
-        I’m currently reconnecting with professionals across Washington State and exploring opportunities
-        where I can contribute at a higher level — including brokerage leadership, operations, and strategic roles.
+        I’m currently reconnecting with professionals across Washington State and exploring
+        opportunities where I can contribute at a higher level through brokerage leadership,
+        operations, training, process improvement, and strategic support.
+      </p>
+
+      <h2>Who I Work With</h2>
+
+      <p>
+        I connect especially well with brokers and brokerage professionals who are capable,
+        committed, and ready for stronger structure around how they operate.
+      </p>
+
+      <ul>
+        <li>Brokers who are producing but need better systems to grow more consistently</li>
+        <li>Experienced brokers whose business has leveled off and who want more efficiency and leverage</li>
+        <li>High-performing brokers who need stronger operational support behind their production</li>
+        <li>Brokerage leaders who value clarity, accountability, and scalable processes</li>
+      </ul>
+
+      <p>
+        In many cases, the issue is not talent or work ethic. It’s the absence of the right
+        systems, support, and operational framework to perform at a higher level.
       </p>
 
       <hr />
 
-      <div style="display: flex; gap: 10px;">
+      <div class="button-row">
         <a class="linkedin-button" href="/">
           Home
+        </a>
+
+        <a class="linkedin-button" href="mailto:doug@dougbullis.com">
+          Email Me
         </a>
 
         <a class="linkedin-button" href="https://www.linkedin.com/in/dougbullis" target="_blank" rel="noopener">
@@ -180,7 +237,13 @@
         </a>
       </div>
 
+      <div class="footer">Managing Broker | Former NWMLS Instructor | Lean Six Sigma Yellow Belt</div>
+      <div class="copyright">© <span id="y"></span> Doug Bullis</div>
     </div>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
