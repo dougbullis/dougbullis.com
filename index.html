@@ -1,13 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="refresh" content="0; url=https://washingtonmyhome.com">
-  <title>Redirecting...</title>
-  <script>
-    window.location.href = "https://washingtonmyhome.com";
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doug Bullis | Systems, Operations & Broker Performance</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#60a5fa;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --line:rgba(255,255,255,.12);
+    }
+
+    *{ margin:0; padding:0; box-sizing:border-box; }
+
+    body{
+      font-family:'Inter',sans-serif;
+      color:var(--text);
+      background: radial-gradient(circle at 20% 20%, #1e293b, #020617 70%);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:50px 20px;
+    }
+
+    .container{
+      max-width:940px;
+      width:100%;
+    }
+
+    .banner-wrapper{
+      text-align:center;
+      margin-bottom:25px;
+    }
+
+    .banner{
+      font-size:16px;
+      letter-spacing:.4px;
+      color:#cbd5f5;
+      padding:10px 18px;
+      border:1px solid var(--line);
+      border-radius:30px;
+      display:inline-block;
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:45px 36px;
+      box-shadow:0 30px 80px rgba(0,0,0,.45);
+      backdrop-filter:blur(6px);
+      animation:fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn{
+      from{ opacity:0; transform:translateY(25px); }
+      to{ opacity:1; transform:translateY(0); }
+    }
+
+    h1{
+      font-size:42px;
+      font-weight:600;
+      letter-spacing:.5px;
+      margin-bottom:14px;
+    }
+
+    .subtitle{
+      display:inline-block;
+      font-size:15px;
+      padding:8px 18px;
+      border:1px solid var(--line);
+      border-radius:30px;
+      color:#cbd5f5;
+      margin-bottom:30px;
+    }
+
+    .hero-image{
+      width:100%;
+      border-radius:18px;
+      margin-bottom:30px;
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+      display:block;
+    }
+
+    p{
+      font-size:18px;
+      line-height:1.7;
+      margin-bottom:22px;
+      color:#d1d5db;
+    }
+
+    .reconnect{
+      font-style:italic;
+      color:#93c5fd;
+      margin-top:10px;
+    }
+
+    hr{
+      border:none;
+      height:1px;
+      background:var(--line);
+      margin:36px 0;
+    }
+
+    .section-title{
+      font-size:22px;
+      font-weight:500;
+      margin-bottom:18px;
+    }
+
+    ul{ list-style:none; }
+
+    li{
+      margin-bottom:12px;
+      font-size:17px;
+      color:#cbd5f5;
+    }
+
+    .email-title{
+      font-weight:500;
+      font-size:18px;
+      margin-bottom:6px;
+    }
+
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+
+    a:hover{ text-decoration:underline; }
+
+    .linkedin-button{
+      display:inline-block;
+      margin-top:12px;
+      padding:10px 18px;
+      background:#2563eb;
+      color:white;
+      border-radius:8px;
+      font-size:15px;
+      transition:all .25s ease;
+    }
+
+    .linkedin-button:hover{
+      background:#1d4ed8;
+      transform:translateY(-2px);
+      text-decoration:none;
+    }
+
+    .footer{
+      margin-top:24px;
+      font-size:15px;
+      color:var(--muted);
+    }
+
+    .copyright{
+      margin-top:30px;
+      font-size:14px;
+      color:#6b7280;
+    }
+
+    @media (max-width:640px){
+      h1{ font-size:32px; }
+      p{ font-size:16px; }
+      .card{ padding:30px 24px; }
+    }
+  </style>
 </head>
+
 <body>
-  <p>Redirecting to <a href="https://washingtonmyhome.com">Washington My Home</a>...</p>
+  <div class="container">
+
+    <div class="banner-wrapper">
+      <div class="banner">Reconnecting with Washington’s Real Estate Community</div>
+    </div>
+
+    <div class="card">
+      <h1>Doug Bullis</h1>
+
+      <div class="subtitle">Managing Broker | Systems, Operations & Broker Performance</div>
+
+      <p style="text-align:center; max-width:700px; margin:0 auto 25px auto; color:#cbd5f5;">
+      I help brokers build better systems, operate more efficiently, and perform at a higher level.
+      </p>
+
+      <img src="hero.png" class="hero-image" alt="Doug Bullis meeting with colleagues" />
+
+      <p>
+        Former NWMLS Instructor and Washington real estate professional with many years of experience working with brokers across the state.
+      </p>
+
+      <p>
+        I am currently reconnecting with colleagues and friends throughout the Washington real estate community while exploring future professional opportunities and continuing work on several industry-related projects.
+      </p>
+
+      <p class="reconnect">
+        If we’ve crossed paths through NWMLS training, I’d enjoy reconnecting.
+      </p>
+
+      <hr />
+
+      <div class="section-title">Industry Experience</div>
+      <ul>
+        <li>Managing Broker – Washington State</li>
+        <li>Former NWMLS Instructor</li>
+        <li>Real Estate Brokerage Operations & Agent Development</li>
+        <li>Industry Training & Professional Education</li>
+        <li>Process Improvement – Lean Six Sigma Yellow Belt</li>
+        <li>Transaction Management & Brokerage Compliance</li>
+      </ul>
+
+      <hr />
+
+      <div class="section-title">Connect With Me</div>
+
+      <div class="email-title">Email</div>
+      <p><a href="mailto:doug@dougbullis.com">doug@dougbullis.com</a></p>
+
+     <div style="display: flex; gap: 10px;">
+      <a class="linkedin-button" href="https://www.linkedin.com/in/dougbullis" target="_blank" rel="noopener">
+    Connect on LinkedIn
+      </a>
+
+      <a class="linkedin-button" href="/about/">
+    About Me
+      </a>
+    </div>
+
+      <hr />
+
+      <div class="footer">Former NWMLS Instructor | Lean Six Sigma Yellow Belt</div>
+      <div class="copyright">© <span id="y"></span> Doug Bullis</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
